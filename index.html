@@ -8,7 +8,8 @@
         body {
             font-family: 'Arial', sans-serif;
             margin: 20px;
-            background-color: #f5f5f5;
+            background-color: #000;
+            color: #fff;
         }
         header {
             text-align: center;
@@ -20,7 +21,10 @@
             margin: 20px 0;
         }
         h2 {
-            color: #333;
+            color: #fff;
+        }
+        p {
+            color: #ccc;
         }
         a {
             color: #007bff;
@@ -29,6 +33,15 @@
         a:hover {
             text-decoration: underline;
         }
+        #profile-photo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
     </style>
 </head>
 <body>
@@ -36,6 +49,9 @@
         <h1>Your Name</h1>
         <p>Web Developer | Software Engineer</p>
     </header>
+
+     <!-- Profile Photo -->
+    <img id="profile-photo" src="your_photo.jpg" alt="Shivam Saxena">
 
     <section id="introduction">
         <h2>Introduction</h2>
@@ -61,8 +77,8 @@
             Feel free to connect with me on:
             <ul>
                 <li><a href="resume.pdf" target="_blank">Resume</a></li>
-                <li><a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a></li>
-                <li><a href="mailto:youremail@example.com">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/shivam-saxena-495202191/" target="_blank">LinkedIn</a></li>
+                <li><a href="mailto:shivam.saxena1729@gmail.com">Email</a></li>
             </ul>
         </p>
     </section>
