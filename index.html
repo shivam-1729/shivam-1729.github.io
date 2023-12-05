@@ -10,15 +10,29 @@
             margin: 20px;
             background-color: #000;
             color: #fff;
+            display: flex;
+            flex-direction: row;
         }
         header {
             text-align: center;
             padding: 20px;
             background-color: #333;
             color: #fff;
+            width: 80%;
         }
-        section {
-            margin: 20px 0;
+        section#main {
+            margin: 20px;
+            width: 80%;
+        }
+         section#side {
+            margin: 20px;
+            width: 20%;
+        }
+        #profile-photo {
+            width: 30%;
+            margin-top: 50px;
+            border-radius: 50%;
+            border: 2px solid #fff;
         }
         h2 {
             color: #fff;
@@ -33,27 +47,15 @@
         a:hover {
             text-decoration: underline;
         }
-        #profile-photo {
-            position: absolute;
-            top: 50px;
-            right: 50px;
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            border: 2px solid #fff;
-        }
     </style>
 </head>
 <body>
+    <section id="main">
     <header>
         <h1>Shivam Saxena</h1>
         <p>Software Engineer</p>
     </header>
-
-     <!-- Profile Photo -->
-    <img id="profile-photo" src="pfp.png" alt="Shivam Saxena">
-
-    <section id="introduction">
+		
         <h2>About Me</h2>
         <p>
             Hi! I am Shivam, presently working as a Software Engineer at <a href="//www.microsoft.com">Microsoft</a>. I completed my Bachelor's from the Department of Electronics and Electrical Communication Engineering at the <a href="//www.iitkgp.ac.in">Indian Institute of Technology, Kharagpur</a>.
@@ -61,28 +63,21 @@
             
             Feel free to check out my resume and drop me an e-mail if you want to chat with me!
         </p>
-    </section>
 
-    <section id="experience">
         <h2>Experience</h2>
         <p>
             I have worked on various projects that include front-end development using HTML, CSS, and JavaScript.
             Additionally, I have experience with back-end technologies such as Node.js and Python, along with
             working with databases like MongoDB and MySQL.
-        </p>
+        
     </section>
-
-    <section id="links">
-        <h2>Connect with Me</h2>
-        <p>
-            Feel free to connect with me on:
-            <ul>
-                <a href="mailto:shivam.saxena1729@gmail.com"><img src="Mail-icon.png" width="50" height="45" alt="Email"></a>
-                <a href="resume.pdf" target="_blank"><img src="cv-icon.png" width="50" height="45" alt="Resume"</a>
-                <a href="https://www.linkedin.com/in/shivam-saxena-495202191/" target="_blank"><img src="linkedin-icon.png" width="50" height="45" alt="Linkedin"</a>
-                <a href="https://github.com/shivam-1729" target="_blank"><img src="github-icon.png" width="50" height="45" alt="Github"</a>
-            </ul>
-        </p>
+    <section id="side">
+    <!-- Profile Photo -->
+    <img id="profile-photo" src="pfp.png" alt="Shivam Saxena">
+    <a href="mailto:shivam.saxena1729@gmail.com"><img src="Mail-icon.png" width="50" height="45" alt="Email"></a>
+    <a href="resume.pdf" target="_blank"><img src="cv-icon.png" width="50" height="45" alt="Resume"></a>          
+    <a href="https://www.linkedin.com/in/shivam-saxena-495202191/" target="_blank"><img src="linkedin-icon.png" width="50" height="45" alt="Linkedin"></a>
+    <a href="https://github.com/shivam-1729" target="_blank"><img src="github-icon.png" width="50" height="45" alt="Github"></a>
     </section>
 </body>
 </html>
