@@ -118,12 +118,35 @@
 
         .publication-item {
             margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Centers the icon vertically with the text */
         }
 
         .publication-item:last-child {
             margin-bottom: 0;
         }
 
+        /* Groups the text so the icon is pushed to the far right */
+        .publication-content {
+            flex-grow: 1;
+            padding-right: 1.5rem;
+        }
+
+        /* Icon styling matching your theme */
+        .publication-link a {
+            color: var(--secondary-color);
+            font-size: 1.6rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+            text-decoration: none;
+            display: flex;
+        }
+
+        .publication-link a:hover {
+            color: #ffffff;
+            transform: translateY(-3px);
+        }
+        
         .publication-title {
             margin: 0;
             color: #ffffff;
@@ -252,25 +275,40 @@
             <h3 class="subsection-title">Publications</h3>
 
             <div class="publication-item">
-                <div class="publication-meta">
-                    <h4 class="publication-title">Hiding cold-start latencies for FaaS clusters on the Edge </h4>
-                    <div class="publication-date">Feb 2026</div>
+                <div class="publication-content">
+                    <div class="publication-meta">
+                        <h4 class="publication-title">Hiding cold-start latencies for FaaS clusters on the Edge</h4>
+                        <div class="publication-date">Feb 2026</div>
+                    </div>
+                    <div class="publication-venue">Paper Submission — SESAME'26 Conference</div>
                 </div>
-                <div class="publication-venue">Paper Submission — SESAME'26 Conference</div>
+                <div class="publication-link">
+                    <a href="#" target="_blank" title="View PDF"><i class="fas fa-file-pdf"></i></a>
+                </div>
             </div>
 
             <div class="publication-item">
-                <div class="publication-meta">
-                    <h4 class="publication-title">Runtime Security Enforcement with Behavior Control</h4>
-                    <div class="publication-date">Apr 2021</div>
+                <div class="publication-content">
+                    <div class="publication-meta">
+                        <h4 class="publication-title">Runtime Security Enforcement with Behavior Control</h4>
+                        <div class="publication-date">Apr 2021</div>
+                    </div>
+                    <div class="publication-venue">Undergraduate Thesis — IIT Kharagpur</div>
                 </div>
-                <div class="publication-venue">Undergraduate Thesis — IIT Kharagpur</div>
+                <div class="publication-link">
+                    <a href="#" target="_blank" title="View PDF"><i class="fas fa-file-pdf"></i></a>
+                </div>
             </div>
 
             <div class="publication-item">
-                <div class="publication-meta">
-                    <h4 class="publication-title">Setup and proof-of-concept development for select high-risk application vulnerabilities</h4>
-                    <div class="publication-date">Dec 2020</div>
+                <div class="publication-content">
+                    <div class="publication-meta">
+                        <h4 class="publication-title">Setup and proof-of-concept development for select high-risk application vulnerabilities</h4>
+                        <div class="publication-date">Dec 2020</div>
+                    </div>
+                </div>
+                <div class="publication-link">
+                    <a href="#" target="_blank" title="View PDF"><i class="fas fa-file-pdf"></i></a>
                 </div>
             </div>
             
