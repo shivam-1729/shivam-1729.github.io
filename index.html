@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shivam Saxena - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -43,16 +44,31 @@
             font-size: 2.5rem;
         }
 
-        .contact-info a {
-            color: #ecf0f1;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 0.95rem;
-            transition: color 0.3s ease;
+        .subtitle {
+            font-size: 1.1rem;
+            color: #bdc3c7;
+            margin-bottom: 1.5rem;
         }
 
-        .contact-info a:hover {
+        /* New Social Links Styling */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: #ecf0f1;
+            font-size: 1.8rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
             color: var(--secondary-color);
+            transform: translateY(-3px);
         }
 
         .container {
@@ -117,28 +133,6 @@
             font-size: 0.9rem;
             font-weight: 600;
         }
-        
-        .resume-btn {
-            display: inline-block;
-            margin-top: 1.5rem;
-            padding: 0.7rem 1.5rem;
-            background-color: var(--secondary-color);
-            color: white;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-        
-        .resume-btn:hover {
-            background-color: #2980b9;
-        }
-
-        /* Citation styling to make bracketed numbers less intrusive visually */
-        .citation {
-            font-size: 0.8rem;
-            color: #95a5a6;
-        }
     </style>
 </head>
 <body>
@@ -146,15 +140,16 @@
     <header>
         <img src="pfp.png" alt="Profile Photo" class="profile-img">
         <h1>Shivam Saxena</h1>
-        <div class="contact-info">
-            <span>+1 404-808-9258</span> | 
-            <a href="mailto:shivam.saxena1729@gmail.com">shivam.saxena1729@gmail.com</a> | 
-            <a href="https://linkedin.com/in/shivam-saxena01" target="_blank">LinkedIn</a> | 
-            <a href="https://github.com/shivam-1729" target="_blank">GitHub</a>
+        <div class="subtitle">Software Engineer | +1 404-808-9258</div>
+        
+        <div class="social-links">
+            <a href="mailto:shivam.saxena1729@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://linkedin.com/in/shivam-saxena01" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/shivam-1729" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="shivam_resume_jun26.pdf" target="_blank" title="Resume"><i class="fas fa-file-pdf"></i></a>
         </div>
-        <a href="shivam_resume_jun26.pdf" class="resume-btn" target="_blank">View Full Resume</a>
     </header>
-
+    
     <div class="container">
         
         <section id="education">
