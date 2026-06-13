@@ -105,6 +105,49 @@
             margin-bottom: 1.5rem;
         }
 
+        .subsection-title {
+            color: #ffffff;
+            font-size: 1.4rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px dashed #333;
+            padding-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .publication-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .publication-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .publication-title {
+            margin: 0;
+            color: #ffffff;
+            font-size: 1.15rem;
+        }
+
+        .publication-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.3rem;
+        }
+
+        .publication-venue {
+            font-weight: 600;
+            color: var(--secondary-color);
+            font-size: 0.95rem;
+        }
+
+        .publication-date {
+            font-size: 0.9rem;
+            color: #a0a0a0;
+        }
+
         p {
             font-size: 1.05rem;
             color: #cccccc;
@@ -205,6 +248,24 @@
                 utilizing PAXOS for strong data consistency. At IIT Kharagpur, I developed a Linux kernel module to achieve runtime security
                 by monitoring syscall executions.
             </p>
+
+            <h3 class="subsection-title"><i class="fas fa-book-open" style="margin-right: 12px; color: var(--secondary-color);"></i>Publications & Theses</h3>
+
+            <div class="publication-item">
+                <div class="publication-meta">
+                    <h4 class="publication-title">Mitigating Serverless Cold-Starts for Edge Data Centers</h4>
+                    <div class="publication-date">Mar 2026</div>
+                </div>
+                <div class="publication-venue">Paper Submission — SESAME'26 Conference</div>
+            </div>
+
+            <div class="publication-item">
+                <div class="publication-meta">
+                    <h4 class="publication-title">Runtime Security Enforcement with Behavior Control</h4>
+                    <div class="publication-date">Jan 2021 - Apr 2021</div>
+                </div>
+                <div class="publication-venue">Undergraduate Thesis — IIT Kharagpur & Altos Data</div>
+            </div>
         </section>
 
         <section id="skills">
